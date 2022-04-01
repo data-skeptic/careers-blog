@@ -1,6 +1,8 @@
 Read the first page.
 
-Repeat the next until no pages left.
+Read the second page.
+
+Continue on until you reach the final page.
 
 Halt.
 
