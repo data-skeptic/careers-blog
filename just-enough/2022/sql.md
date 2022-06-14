@@ -1,5 +1,3 @@
-## Just Enough SQL
-
 I took a databases course in college.  I think I got an A.  I had no idea how to use SQL.  If you don't either, this guide is meant to be a simple crash course to give you just enough information to be dangerous.
 
 Structured query language or SQL is a really simple language that anyone can learn.  It's not just for technical professionals.  I've interacted with many finance, marketing, and other non-engineering professionals who look a small amount of SQL knowledge as the lever to accellerate their careers.
