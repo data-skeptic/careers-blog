@@ -14,7 +14,7 @@ Business analytics has matured a lot in the last decade.  Even small companies t
 
 Let's learn it by example in a few queries.
 
-    SELECT *
+    **SELECT** *
     FROM daily_sales_by_hour
     WHERE created_at > '2014-05-14'
     LIMIT 10
@@ -31,14 +31,12 @@ Finally `LIMIT` is an optional parameter telling the database we only want `10` 
 
 Hopefully you have an intuitive grasp of the basic query above and would be comfortable manipulating it, provided you had access to the same database and a means of querying it.  SQL is learned in the trenches.  Have a friend write you a query like the one above and start manipulating it iteratively.  Prior to that, let's take on the next example.
 
-```
-SELECT store_id \n
-, SUM(revenue) as total_revenue \n
-, COUNT(DISTINCT customer_id) as customers \n
-FROM daily_sales_by_hour \n
-WHERE sales_date == '2014-05-14' \n
-GROUP BY store_id \n
-```
+    SELECT store_id
+    , SUM(revenue) as total_revenue
+    , COUNT(DISTINCT customer_id) as customers
+    FROM daily_sales_by_hour
+    WHERE sales_date == '2014-05-14'
+    GROUP BY store_id
 
 The key new command here is the `GROUP BY` which asks the database do pre-aggregate the data for us and return a summarized result.  After the command, we list the columns which will map to unique rows in the output.  Here we are going to summarize by `store_id`.  If that wasn't unique enough it could be a list like `GROUP BY store_id, country_code`.
 
@@ -46,16 +44,14 @@ Also new are `SUM` and `COUNT` as well as the aliasing syntax (e.g. `as total_re
 
 Last query is a fancier version of the one above
 
-```
-SELECT t2.store_name \n
-, SUM(t1.revenue) as total_revenue \n
-, COUNT(DISTINCT t1.customer_id) as customers \n
-FROM daily_sales_by_hour t1 \n
-JOIN stores t2 \n
-  ON t1.store_id = t2.store_id \n
-WHERE t1.sales_date == '2014-05-14' \n
-GROUP BY t2.store_name \n
-```
+    SELECT t2.store_name
+    , SUM(t1.revenue) as total_revenue
+    , COUNT(DISTINCT t1.customer_id) as customers
+    FROM daily_sales_by_hour t1
+    JOIN stores t2
+      ON t1.store_id = t2.store_id
+    WHERE t1.sales_date == '2014-05-14'
+    GROUP BY t2.store_name
 
 In this version, I introduce a `JOIN` in order to query data from multiple tables.  You almost always want to join on an integer value where one is the primary key of one of the tables.  After `JOIN` comes `ON` which expresses the relationship which must hold true for the matching rows to be included in the resultset.  If a record existed in `daily_sales_by_hour` for a non-existent `store_id` (typo?, historical?, fraud?), then that row in the first table would be ignored.  If you wanted to include missing rows, it would be a `LEFT JOIN`.  In the case of a missing store, the value of `NULL` would appear for the missing row.
 
