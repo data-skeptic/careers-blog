@@ -15,10 +15,13 @@ Business analytics has matured a lot in the last decade.  Even small companies t
 Let's learn it by example in a few queries.
 
 ```
-    SELECT *
-    FROM daily_sales_by_hour
-    WHERE created_at > '2014-05-14'
-    LIMIT 10
+SELECT *
+
+FROM daily_sales_by_hour
+
+WHERE created_at > '2014-05-14'
+
+LIMIT 10
 ```
 
 This query highlights four of the main commands of SQL, from which there's around 6-12 useful commands depending on who you ask.
@@ -35,10 +38,15 @@ Hopefully you have an intuitive grasp of the basic query above and would be comf
 
 ```
     SELECT store_id
+
     , SUM(revenue) as total_revenue
+
     , COUNT(DISTINCT customer_id) as customers
+
     FROM daily_sales_by_hour
+
     WHERE sales_date == '2014-05-14'
+
     GROUP BY store_id
 ```
 
@@ -50,12 +58,19 @@ Last query is a fancier version of the one above
 
 ```
     SELECT t2.store_name
+
     , SUM(t1.revenue) as total_revenue
+
     , COUNT(DISTINCT t1.customer_id) as customers
+
     FROM daily_sales_by_hour t1
+
     JOIN stores t2
+
       ON t1.store_id = t2.store_id
+
     WHERE t1.sales_date == '2014-05-14'
+
     GROUP BY t2.store_name
 ```
 
