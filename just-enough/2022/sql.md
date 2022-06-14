@@ -12,9 +12,16 @@ Business analytics has matured a lot in the last decade.  Even small companies t
 
 ### SQL is easy to learn
 
+
+``` sql
+SELECT *
+FROM daily_sales_by_hour
+WHERE created_at > '2014-05-14'
+LIMIT 10
+```
 Let's learn it by example in a few queries.
 
-    **SELECT** *
+    SELECT *
     FROM daily_sales_by_hour
     WHERE created_at > '2014-05-14'
     LIMIT 10
