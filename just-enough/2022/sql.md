@@ -14,12 +14,10 @@ Business analytics has matured a lot in the last decade.  Even small companies t
 
 Let's learn it by example in a few queries.
 
-```
-SELECT * \n
-FROM daily_sales_by_hour \n
-WHERE created_at > '2014-05-14' \n
-LIMIT 10
-```
+    SELECT *
+    FROM daily_sales_by_hour
+    WHERE created_at > '2014-05-14'
+    LIMIT 10
 
 This query highlights four of the main commands of SQL, from which there's around 6-12 useful commands depending on who you ask.
 
