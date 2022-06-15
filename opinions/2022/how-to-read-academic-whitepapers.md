@@ -10,7 +10,7 @@ While all learning is virtuous, you can't expect to absorb the breath of human k
 
 Are you already actively reading papers from time to time?  If not, stop what you are doing right now, visit [arxiv.org](https://arxiv.org) and find a paper - **any** paper that captures your interest.  Developing this skill, like any other skill, gets the most benefit from regular, repeated effort.  Set a pace to read (or attempt reading!) one paper every *N* days.  Over time, I recommend trying to minimize on *N*.
 
-## Ready out of order
+## Read out of order
 
 I start every paper by reading the abstract, introduction, and then conclusion.  My goal is to determine if I can gain a basic understanding of the problem the paper is contributing to, what other work it relates to that I'm familiar with, and if it's something I'd like to understand.  If the paper describes ideas or terminology I'm not familiar with, it's typically best to go do some independent research on those terms before returning.
 
