@@ -1,4 +1,4 @@
-# ![](https://lh6.googleusercontent.com/xEvl5B8kyKMAGByzG2KJpF1VeX8Jn1vBfTC27gt_Xx3x3-e4OD3sfqqEVA4wxM0kTNwLWv9RD_aPXC-_kXkna60KRnNFe5eL5Ijg6gdLuQbf-KmfT3W0yq50z9fdJPzwCg4BuDvB49f6nEaAQA)![](https://lh5.googleusercontent.com/KiJ9qMrrKm3ZTNoib40Sg4povuVkbv7JRQ9u_buVBViV3xqit6GXCKpW-twUPOJXe_bCbnGTt6KUC0z2Z4LSj1cVojFbqBPXHQlPEBdgJJsDV0g7cGXMUcSAP68nYacTPneHfD0SfbdEpK0Uaw)![](https://lh4.googleusercontent.com/6EPBshvmKf1F6jV3haPqBBoogivI7DzCcryeV9en6BuxHxUZwpzLaM3qmzzo0NAPtkedc_iC6Q_9l7p8TjDsqX-6tdDkkgmJPy7VRJ3yIJ4bmcv40YtnTaQQZla4CDN9ys10FxpsBFjgGd4xww)![](https://lh5.googleusercontent.com/8T_fSFi0gU3C_ju9uzBjXk-6b07vh1DQL_NI7RJ-C2p-SP1ViYrgL7AYHwYY38hIv8kvSd8wHzAlqyGEa_ilKIW7dIgJX7dCenOcwwNgTosqjexTgJrGNvkA0G7K3yxirhX8YLnxJqt5QGtgDw)![](https://lh3.googleusercontent.com/JnajXeVPmcN7xK4h7JHWhOKIO6W3b9Lc3siOC0obfT6oLfcHj6e1YKEaMverkeJsDIcvgxuG0Og7rStL_Dh2UVniIo3mqz64KT5RTta0gcHm2MjHikfKWE-Evz51a__Gwbh_4ByP4VRFxPCX6A)![](https://lh3.googleusercontent.com/XJUj-EE4TIhpRWeB4IMgy9by71W9DXUSEoTbLigp8AlThjizN-L_KGKK8QvxTmNUYj5L5_AJo3F4xHXykZVp1Qtg2mVETJAruGfULNfHGriVOnn1ywc4s_0LaZGNrrVzJeh05I5JN8njd1vnVw)5 Things I didn’t Know Before Getting into Data Science
+5 Things I didn’t Know Before Getting into Data Science
 
 Some years ago, I was a complete neophyte trying to transition into data science. Before deciding to learn data science, there were some preconceived notions I had about the field. After getting my hands dirty, however, it was a different ball game and a rude shock to realize some of my premonitions were not entirely true. In this article, I will share some of the things I didn’t know before getting into data science. If you are a beginner wanting to start a data science career, this article will put you on the right track to what data science really is. Let’s get in.
 
@@ -16,7 +16,7 @@ So if you are a pharmacist, you can be a data scientist trying to analyze data f
 
 I used to think programming was an optional requirement in data science. But I soon discovered that it is what differentiates data science from data analysis. Coding is, in fact, another ingredient of data science. 
 
-![](https://lh3.googleusercontent.com/Yf1W7D-Y9NzLarrw-3M-4lJN-PSpDw77w6_Dkh_Ec3M7K66xrvB253wRDP-K6CvFWIibu2y52R5Cifk5Keh7uRi0aTGcko-Ww9tsIXzDwS3ePsidFdQDugboFA_gxKcJQvBB5ngJDSmGXbVUiw)
+
 
 Source: [Ohio State University Libraries](https://library.osu.edu/site/it/where-does-data-science-fit-in/)
 
@@ -38,7 +38,6 @@ I believed that after building machine learning with an accuracy of above 90%, I
 
 Imagine a business that builds a predictive model with data before the COVID-19 pandemic. The model could learn that their customers prefer buying their goods in physical stores. But the unprecedented sit-at-home policy of the pandemic might have changed that. Not retraining the model after the pandemic would result in an inaccurate model, and thus, a declining revenue.
 
-![](https://lh6.googleusercontent.com/BAinjbwSXizmwfMqewhP-hdAb7idjkocj7MOPZg9jiclxRXHNUuNXQvXVKJ7_fyM5gIWRZpRcsykrfrdJou0D8RTE1m1_mwRrZaSJ2LK0Ry4KWsJ7J_UoMpJ2Pq9EyOZsMXUhkX_1-fH9WQ73w)
 
   
 

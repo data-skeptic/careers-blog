@@ -1,10 +1,6 @@
-# Where to get a Tableau crash course?
-
-  
-
 If you want to master Tableau as quickly as possible, there are a couple of ways you can do it. In this article, we will discuss two platforms to get high-quality Tableau crash courses in a matter of clicks. You can practically get comfortable with Tableau by investing just one hour of your time into learning. 
 
-1.  ## Coursera
+## 1. Coursera
     
 
 Coursera is a one-stop shop for online courses. The platform was founded in 2012 by a Professor of Computer Science and a renowned educator of Machine Learning, Andrew Ng. The platform particularly gained popularity during the COVID-19 pandemic when online learning gained traction. Coursera has a plethora of courses in different fields including Data Visualization with Tableau. 
@@ -20,7 +16,7 @@ One unique perk of Coursera is that many of its courses are organized by accompl
 
 Note: Some courses on Coursera are not free. However, you can apply for financial aid with tangible reasons stating why you want the course fee waived. Most genuine financial aid applications get granted so do not shy away from applying if you need it.
 
-2.  ## YouTube 
+## 2. YouTube 
     
 
 YouTube is the second most visited website in the world after Google. The platform has undoubtedly become all-encompassing with regards to anything video. You can be sure to find top-notch Tableau courses on YouTube. And of course, for free. 
@@ -36,4 +32,4 @@ Here are some of the YouTube Tableau tutorials you can find on YouTube. 
 
 ## Tying it all up
 
-There you have it. You have discovered six unique Tableau courses you can take when you urgently want to learn the tool. Cousera and YouTube are quite different in terms of student-instructor bonding but in the end, they both are great platforms to learn Tableau really quickly. Meanwhile, this is not an exhaustive list. There are other Teablue courses you can explore on both platforms. So go ahead, get in and have fun learning. 
+There you have it. You have discovered six unique Tableau courses you can take when you urgently want to learn the tool. Cousera and YouTube are quite different in terms of student-instructor bonding but in the end, they both are great platforms to learn Tableau really quickly. Meanwhile, this is not an exhaustive list. There are other Tableau courses you can explore on both platforms. So go ahead, get in and have fun learning. 
