@@ -1,5 +1,3 @@
-# 5 Things I didn’t Know Before Getting into Data Science
-
 Some years ago, I was a complete neophyte trying to transition into data science. Before deciding to learn data science, there were some preconceived notions I had about the field. After getting my hands dirty, however, it was a different ball game and a rude shock to realize some of my premonitions were not entirely true. In this article, I will share some of the things I didn’t know before getting into data science. If you are a beginner wanting to start a data science career, this article will put you on the right track to what data science really is. Let’s get in.
 
 ## 1. Data science can be applied everywhere
