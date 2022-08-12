@@ -1,5 +1,3 @@
-# Divorce and birth rate as affected by the pandemic.
-
 From workplace interaction to how we commute, to our social life - the pandemic affected pretty much all we do as humans. While its effect on family interaction may be subtle at first glance, in reality, it has been grave. There has rather been a different trend in divorce and birth rates in the US since COVID hit. In this article, we will discuss some statistical findings on the effect of the pandemic on birth rate, marriages and divorce. Let’s dive in.
 
 ## Birth rates are declining!
