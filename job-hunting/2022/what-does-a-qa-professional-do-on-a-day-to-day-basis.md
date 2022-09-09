@@ -38,8 +38,6 @@ Also, having one-on-one meetings with the product owner, business analyst or sen
 
 It goes without saying that a QA professional cannot work in isolation. While meetings are a great place to relate with members of the team, you will also be communicating with them outside meetings. On a daily basis, you will be sending emails clarifying requirements, responding to slack messages and sharing Google Docs documents. 
 
-![]
-
 You will also be relating with the product owner as well as the project manager on different grounds. You could share ideas on why the product needs modification before it is pushed to production or have your thoughts on why the customers are not interacting with a feature as envisaged.
 
 ## 5. Write test documentation and progress reports 
