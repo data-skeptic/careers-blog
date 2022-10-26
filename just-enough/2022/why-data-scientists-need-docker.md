@@ -1,6 +1,4 @@
-# Why Data Scientists Need Docker
-
-> I don't know what to tell you, it works on my computer.
+> "I don't know what to tell you, it works on my computer."
 
 The quote above was an all to frequently heard platitude in many software development groups prior to 
 advancements in software tooling such ad Docker.
@@ -63,16 +61,14 @@ provided on the machine image that is being built.  You'll want to have many `RU
 your dependencies and configure things to be just right.  You'll likely need to `COPY` and `ADD` a few things 
 along the way.
 
-```
-FROM ubuntu:22.04
+	FROM ubuntu:22.04
 
-COPY requirements.txt /
-RUN apt-get install -r requirements.txt
-RUN pip install -r requirements
-ADD my_app /app
+	COPY requirements.txt /
+	RUN apt-get install -r requirements.txt
+	RUN pip install -r requirements
+	ADD my_app /app
 
-CMD ["/app/start.sh"]
-```
+	CMD ["/app/start.sh"]
 
 The `CMD` command differs from `RUN` in that it happens when the container is executed, not when the container is 
 built.  A Dockerfile is nothing more than a basic text file with a nice recipe in it.  That text file needs to be 
@@ -104,12 +100,10 @@ Even on a mature image, I sometimes need to "go inside" and do some debugging.  
 as well.  When running your docker image in production, you definitely don't need or want an interative terminal.  
 Instead, the `-d` for daemon mode is preferred.  An example with some other niceties is provided below.
 
-```
-docker run -d \
-  --env-file .env \
-  -p 3000:3000 \
-  my-app-v1
-```
+	docker run -d \
+	  --env-file .env \
+	  -p 3000:3000 \
+	  my-app-v1
 
 In addition to demonstrating the `-d` option, I've snuck in two further enhancements I use often.  The 
 `--env-file` allows me to tell docker where to get environment variables from.  On a production server, you 
@@ -136,7 +130,9 @@ terminal that I can us.
 Data scientists need Docker because it's a ubiquitous standard from which they benefit in three key ways:
 
 1) Less problems
+
 2) More control
+
 3) Greater scalability
 
 As a data scientist, you're going to be constantly asked to learn new tools and techniques.  No one person can 
