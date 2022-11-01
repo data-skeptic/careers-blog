@@ -1,5 +1,3 @@
-# Using Machine Learning on Small Datasets
-
 Over the past few decades, the ability to train machine learning models at scale is a promise delivered.  Scaling ML to process millions, billions, or greater number of rows of data is attainable today.  What isn't always attainable is access to millions and billions of rows of data.  Large corporations often have large datasets.  This may not be the case for small and medium sized companies.
 
 What can an organization do when their dataset is only a few dozen rows of data?  Is machine learning still the right tool?
