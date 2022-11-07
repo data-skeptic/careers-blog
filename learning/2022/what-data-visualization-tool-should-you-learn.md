@@ -4,7 +4,7 @@ Data visualization is a critical component of any data science undertaking. It g
 
 If you are an aspiring data scientist, and you are unsure about the particular tool to learn, this article will discuss 5 popular data visualization tools in the market today. We’d discuss their features, benefits and some drawbacks. Let’s jump into it.
 
-1.  ## Matplotlib
+## 1. Matplotlib
     
 
 Matplotlib is a popular Python library for data visualization. It creates 2D plots using low-level codes. Matplotlib was built on top of Numpy and can create a wide range of plots such as bar charts, histograms, scatterplots, line charts, etc. You can also define color palettes, themes, colormaps, etc. One major benefit of matplotlib is that it is cross-platform and can work with numerous operating systems and graphics backend. It is widely used in Jupyter Notebook, alongside other tools such as [Seaborn](https://seaborn.pydata.org/).
@@ -29,7 +29,7 @@ Matplotlib plotting styles may however come off as old-fashioned, especially if 
 * It requires a decent understanding of Python.
     
 
-2.  ## D3
+## 2. D3
     
 
 D3 (which stands for data-driven documents) is a JavaScript library that allows you to manipulate documents based on data. In other words, you can automatically render web pages containing HTML or SVG elements. D3 is widely used today for creating interactive data visualizations on web pages. You may have guessed that D3 requires a good understanding of HTML, CSS and JavaScript.
@@ -58,7 +58,7 @@ You can begin with D3 using simple examples [here](https://d3-graph-gallery.com/
 * Requires a strong knowledge of HTML, CSS and JavaScript
     
 
-3.  ## Ggplot
+## 3. Ggplot
     
 
 Ggplot is a powerful data visualization tool in the R programming language. It creates plots based on special structures called the grammar of graphics. There are three basic graphics elements ggplot uses. They are the data, aesthetics and geometry. The data is simply the dataset to be used. The aesthetics, on the other hand, differentiates what variables would be mapped to the x-axis, y-axis, point color, etc. Finally, the structure is the type of plot you wish to draw. They could be a scatter plot, barplot, boxplot, line plot, histogram, etc.
@@ -79,9 +79,7 @@ Learn about ggplot with examples [here](https://r4stats.com/examples/graphics-gg
 * It involves coding in R which is declining in popularity compared to Python.
     
 
-  
-
-4.  ## EChart
+## 4. EChart
     
 
 EChart is a powerful JavaScript library by Apache. Unlike D3, ECharts has many data visualization templates that can get you up and running quickly. You can create complex and interactive visualization that suits your exact needs by simply editing the hundreds of templates It has gained wide popularity amongst front-end developers for creating visually appealing charts on webpages.
@@ -104,11 +102,9 @@ Because EChart is open-source, there are available libraries that allow you to a
 ## Drawback
 
 * You may require some knowledge of JavaScript to work with the templates
-    
-
   
 
-5.  ## Tableau
+## 5. Tableau
     
 
 Tableau is an easy-to-use data visualization tool for business analysis. It can ingest the data and create powerful and interactive plots for data analysis. Beyond that, it is great for data reporting with its dashboarding features.
@@ -135,7 +131,6 @@ Tableau can pull data from different sources such as a spreadsheet, pdf or a rel
 * There are troubleshooting limitations
     
 
-  
 
 ## Final words
 
