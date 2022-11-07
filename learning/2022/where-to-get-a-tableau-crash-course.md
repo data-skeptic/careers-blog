@@ -1,7 +1,6 @@
 If you want to master Tableau as quickly as possible, there are a couple of ways you can do it. In this article, we will discuss two platforms to get high-quality Tableau crash courses in a matter of clicks. You can practically get comfortable with Tableau by investing just one hour of your time into learning. 
 
 ## 1. Coursera
-    
 
 Coursera is a one-stop shop for online courses. The platform was founded in 2012 by a Professor of Computer Science and a renowned educator of Machine Learning, Andrew Ng. The platform particularly gained popularity during the COVID-19 pandemic when online learning gained traction. Coursera has a plethora of courses in different fields including Data Visualization with Tableau. 
 
