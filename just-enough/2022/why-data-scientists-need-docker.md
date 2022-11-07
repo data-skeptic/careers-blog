@@ -1,7 +1,7 @@
 > "I don't know what to tell you, it works on my computer."
 
 The quote above was an all to frequently heard platitude in many software development groups prior to 
-advancements in software tooling such ad Docker.
+advancements in software tooling such as Docker.
 
 Docker is a software tool that enables users to run containers.  Containers were introduced to solve a number of 
 problems in the packaging and deployment of software.  Everyone's kitchen is set up the owner's unique way.  In 
