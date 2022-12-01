@@ -1,5 +1,3 @@
-## Reasons to Fake Data
-
 There's an emerging market of solutions for helping you generate fake date and anonymize existing data.  Historically this is an area where many data scientists built home grown solutions.  As these practices have become more commonplace, practitioneers are looking to libraries and tools that can help them with fake data.  But what's the use of fake data in the first place?  In my persional experience, there have been three key reasons:
 
 ### Limiting the Blast Radius
