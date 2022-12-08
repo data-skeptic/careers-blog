@@ -28,27 +28,30 @@ Here are some properties of parquet files
 
 Parquet files have a smaller file than CSV files due to their excellent compression. This means that you save some cost for data storage compared to having the same data in a CSV format. Let’s do some practical experiments to prove this. We would compare the file size of the same data in both CSV and Parquet formats.
 
-To do this, I [downloaded a dataset from Kaggle](https://www.kaggle.com/datasets/thedevastator/adoptable-dogs-in-the-us?resource=download) and loaded it into a Jupyter notebook using pandas.
+To do this, I downloaded a [dataset from Kaggle](https://www.kaggle.com/datasets/thedevastator/adoptable-dogs-in-the-us?resource=download) and loaded it into a Jupyter notebook using pandas.
 
+```
 from time import time  
 import os  
 import numpy as np  
 import pandas as pd  
 df_csv = pd.read_csv("allDogDescriptions.csv")
-
+```
   
 
 Next, we converted the file to parquet format using the to_parquet() method and imported it into the Jupyter notebook.
 
+```
 df_csv.to_parquet("allDogDescriptions.parquet")  
 df_parquet = pd.read_parquet("allDogDescriptions.parquet")
-
+```
   
 
 Now, let’s check the file size of both files.
-
+```
 os.path.getsize("allDogDescriptions.csv")  
 os.path.getsize("allDogDescriptions.parquet")
+```
 
 ![](https://lh4.googleusercontent.com/2NIdei-1yMs5xysH1sIzM8Ioi8jmyV7is8xhUOMmH2AvBfsbWUWfurdr2ZxQKQ75-CSls-Y-ZX_4nhTHpcWUeLKu3RG6IdkSS4ltTpCZ6PfHxar6dzJ008MX96EJPWhTj49UGwbWMHcKV4DJUJvnPVPArZoiq024fxQ5ookG93pPd-J3EKch7-YmR3lyxw)
 
@@ -59,9 +62,10 @@ As seen, the CSV file has a file size of 67.3 MB while the Parquet file has a fi
 
 Because the Parquet format is column-oriented, it has a faster read time than CSV files. To continue our experiment, let’s check how long it takes to read both files.
 
+```
 %time df_csv = pd.read_csv("allDogDescriptions.csv")  
 %time df_parquet = pd.read_parquet("allDogDescriptions.parquet")
-
+```
   
 
 The result?
@@ -79,8 +83,9 @@ To achieve this on a CSV file, the entire will first be read then the required c
 
 The dataset has 36 columns but if we only wish to work with two columns, say "breed_primary", "breed_secondary". We can check how long it takes to impor both file formats. For the CSV file, we import the dataset and pass the "usecol" argument.
 
+```
 %time pd.read_csv("allDogDescriptions.csv", usecols=["breed_primary", "breed_secondary"])
-
+```
   
 
 ![](https://lh5.googleusercontent.com/zeqRXsIMp-odwFRkMpwokv4qodSg2zacasoQq3W4TnxGLs4uNHt_b1CxPeUXsLrT93WzWeKw5Yf6apuj2VHD63QV5tB4mOe1S1EU-1duF0f0-FcRMxMGszXmqIXybJGf7GcJGVPih8VEIfnJ4yWhbRobgXapkCUc7h7ZwdSN6oNZR4__JzaZJsOoosHO1A)
@@ -89,8 +94,9 @@ Notice, it took 344 milliseconds. 
 
 Now, let's perform the same operation for the Parquet file.
 
+```
 %time pd.read_parquet("allDogDescriptions.parquet", columns = ["breed_primary", "breed_secondary"])
-
+```
   
 
 ![](https://lh4.googleusercontent.com/cWkO2232J3ZidZCksy9v2nkugzWBffW-7SqNnuaGKybPXL6XfSjdr-TkW1egc_buuzx8qC-mFWYD3nrIH6Mr2jGUW-xwsdmdqw5rX-etVQ6UyDQbzbGDhULm3f5xtOp7TNJRqmQkinq5gsFv3Y_4XPF7TIUskx5tYyezzLz_ugjWryY3xY6NdLdM8IKGrw)
