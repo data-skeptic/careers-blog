@@ -8,7 +8,7 @@ Before deciding on which tool to discuss, I searched for open-source AI tools th
 
 There were some commercialized AI tools I found as well. One was AIVA and the other was Soundraw. We’d talk about each of these.
 
-1.  ## Magenta
+## 1. Magenta
     
 
 Magenta is an open-source AI project by Google for generating music. Its primary objective is the showcase the creativity of AI systems.
@@ -36,7 +36,7 @@ I tried using the MusicVAE model. The MusicVAE model creates as many samples of 
 
 Note that songs created on Magenta are under the CC0 license which means whatever sound you create with the tool is recognized as yours.
 
-2.  ## Open AI Jukebox
+## 2. Open AI Jukebox
     
 
 Jukebox is a tool by Open AI for creating audio with basic lyrics. Their generative model uses an autoencoder to generate new sounds. An autoencoder has two parts: the encoder and the decoder. The encoder compresses the input data to a smaller dimension while the decoder learns how to reconstruct the compressed data to the original input file. 
@@ -49,14 +49,14 @@ I ran a [<ins>code</ins>](https://colab.research.google.com/drive/1sJda9v46gNzBc
 
 Because I used a low-compute model, the song was not so nice. Watch this video to listen to nice [<ins>music</ins>](https://www.youtube.com/watch?v=q21I7YO-MEs&ab_channel=GabeMillerMusic) from Jukebox.
 
-3.  ## AIVA
+## 3. AIVA
     
 
 AIVA is another great tool for creating soundtracks. Their algorithm was trained on over 30,000 music melodies from reputable artists. AIVA is one of the most commercial tools used for music generation. While they have different cadres of subscriptions, there is also a free plan that allows you to create music beats off other songs. You however have no copyrights to the soundtrack and cannot use it for monetization purposes.
 
 To create a track, create an account and select a song profile which you want your generated track to stem from. Alternatively, you can upload MIDI or MP3 files of your desired soundtrack. You will then be prompted to select the key signature you want the output file to be, the kind of emotions you want to soundtrack to pass across, and the duration of the soundtrack. After completing the settings, AIVA creates completely new soundtracks in a few minutes. You can also edit the generated soundtrack to your taste. Check out this [<ins>YouTube playlist</ins>](https://www.youtube.com/playlist?list=PLv7BOfa4CxsHAMHQj0ScPXSbgBlLglRPo) to see other songs created with AIVA.
 
-4.  ## Soundraw
+## 4. Soundraw
     
 
 Soundraw is yet another AI tool used for creating royalty-free music. The tool also has a plugin that you can connect to PremierPro for video soundtracks. You can use Soundraw to create music without creating an account but the generated cannot be downloaded until you subscribe to their plan. After subscribing to one of their plans, you can easily create sounds by setting the theme of the song (whether for the vlog, jungle, games, corporate, etc), the mood (whether happy, exciting, emotional, relaxing, etc), the length, the tempo, the tempo, etc. You can also edit the output song and use it for any purpose.
