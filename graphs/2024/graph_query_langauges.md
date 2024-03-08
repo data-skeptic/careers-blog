@@ -16,7 +16,7 @@ As mentioned earlier, graphs are represented in nodes and edges. For instance, a
 
 The figure below captures the relationship between these four people.
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" style="width:4.44in; height:3.36in;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image5.png" style="width:4.44in; height:3.36in;">
 
 
 
@@ -159,7 +159,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image3.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image3.png" style="width:6.5in; height:auto;">
 
 
 
@@ -195,7 +195,7 @@ valueMap()
 Output:
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image8.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image8.png" style="width:6.5in; height:auto;">
 
 
 
@@ -244,7 +244,7 @@ g.V('3')
 
 Output: 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image9.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image9.png" style="width:6.5in; height:auto;">
 
 
 
@@ -408,7 +408,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image6.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image6.png" style="width:6.5in; height:auto;">
 
 
 
@@ -438,7 +438,7 @@ RETURN friends.name AS FirstName
 Output:
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image4.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image4.png" style="width:6.5in; height:auto;">
 
 
 
@@ -470,7 +470,7 @@ RETURN [node IN nodes(path) | node.name] AS FirstName
 Output:
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image10.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image10.png" style="width:6.5in; height:auto;">
 
 
 
@@ -549,7 +549,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image1.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image1.png" style="width:6.5in; height:auto;">
 
 
 
@@ -589,7 +589,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image7.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image7.png" style="width:6.5in; height:auto;">
 
 
 
@@ -612,7 +612,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image2.png" style="width:6.5in; height:auto;">
+<img src="https://feaas-staging.s3.us-east-1.amazonaws.com/user/david@dataskeptic.com/imdb_images/image2.png" style="width:6.5in; height:auto;">
 
 
 
