@@ -41,7 +41,7 @@ Gremlin queries always begin from a traversal source. By convention, this is giv
 
 To add a node in Gremlin, we use `g.addV()`. We add the `.property()` method to add properties of the node.
 
-For instance, the code below adds a person node, with whose first name is Diana.
+For instance, the code below adds a person node, whose first name is Diana.
 
 
 ```
