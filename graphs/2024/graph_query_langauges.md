@@ -16,7 +16,9 @@ As mentioned earlier, graphs are represented in nodes and edges. For instance, a
 
 The figure below captures the relationship between these four people.
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" width="2.44in"/>
+<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" style="width:4.44in; height:3.36in;">
+
+
 
 
 
@@ -27,19 +29,19 @@ Each person, Eli, Charlie, Alice, and Diana, is a node. The lines represent the 
 
 For instance, the properties of a person node include gender, properties, age, etc., while the properties of a friendship edge can be ‘years of friendship’, ‘level of friendship’, etc.
 
-When querying graphs, we specify them in terms of steps from a node to an edge or vice versa. The steps are technically called traversals. In our graph, if we wish to know Diana's friends, we traverse from Diana to any available edge.
+When querying graphs, we specify them in terms of steps from a node to an edge or vice versa. These steps are technically called traversals. In our graph, if we wish to know Diana's friends, we traverse from Diana to any available edge and find the adjacent node.
 
 
 ## Gremlin
 
 Gremlin is a part of the Apache TinkerPop project. It allows us to create powerful graphs using simple syntax. We can download Gremlin Server and Gremlin Console to create and manage a graph database with Gremlin.
 
-Gremlin queries always begin from a traversal source. By convention, this is given the variable g. g is the traversal that connects to the gremlin server.
+Gremlin queries always begin from a traversal source. By convention, this is given the variable `g`. `g` is the traversal that connects to the gremlin server.
 
 
 ### Adding a node
 
-To add a node in Gremlin, we use g.addV(). We add the .property() method to add properties of the node.
+To add a node in Gremlin, we use `g.addV()`. We add the `.property()` method to add properties of the node.
 
 For instance, the code below adds a person node, with whose first name is Diana.
 
@@ -62,7 +64,7 @@ g.addV('person').property(id, '4').property('first_name', 'Eli')
 
 ### Adding an edge
 
-To add an edge, we use g.addE(). The addE() method follows the following syntax:
+To add an edge, we use `g.addE()`. The `addE()` method follows the following syntax:
 
 
 ```
@@ -70,7 +72,7 @@ g.V(<source_node_id>).addE(<edge_name>).to(__.V(<target_node_id>)
 ```
 
 
-We can also specify the properties of the edge using the .property() method.
+We can also specify the properties of the edge using the `.property()` method.
 
 The code below adds an edge between Alice and Charlie, with three years of friendship as the edge property.
 
@@ -93,7 +95,7 @@ g.V('2').addE('friends_with').to(__.V('4')).property('years_of_friendship', 5)
 
 ### Deleting a node/edge
 
-We can delete a node or edge in Gremlin with the .drop() method. To delete a node, run.
+We can delete a node or edge in Gremlin with the `.drop()` method. To delete a node, run.
 
 
 ```
@@ -129,9 +131,9 @@ This removes all nodes in the graph. But since Gremlin automatically removes any
 
 ### Traversing the graph
 
-Traversing a graph means moving from one node to another through an edge. This allows us to write queries to filter relationships we are interested in or find paths between two nodes. To specify a node when the traversal begins, we use the has() method to specify the property of the node we are interested in.
+Traversing a graph means moving from one node to another through an edge. This allows us to write queries to filter relationships we are interested in or find paths between two nodes. To specify a node when the traversal begins, we use the `has()` method to specify the property of the node we are interested in.
 
-The .has() method has the syntax:
+The `.has()` method has the syntax:
 
 
 ```
@@ -143,9 +145,9 @@ When traversing a graph in Gremlin, we also need to specify the direction of the
 
 
 
-* out(): The traversal considers only outgoing edges.
-* in(): The traversal considers only incoming edges.
-* both(): The traversal considers both outgoing and incoming edges.
+* `out()`: The traversal considers only outgoing edges.
+* `in()`: The traversal considers only incoming edges.
+* `both()`: The traversal considers both outgoing and incoming edges.
 
 Let’s say we want to find Alice's friends; we can traverse from the Alice node outward. The result is any path (edge to node) from Alice's node. The code below returns all the friends of Alice.
 
@@ -159,7 +161,7 @@ Output:
 
 
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" style="width:6.5in; height:auto;">
+<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image3.png" style="width:6.5in; height:auto;">
 
 
 
@@ -178,12 +180,12 @@ g.V('3').out('friends_with').values('first_name').toList()
 
 ### Recursive traversals
 
-Sometimes, we may need to traverse a graph multiple times or until a condition is met. This is called recursive traversal. When performing recursive traversals in Gremlin, we use the repeat(&lt;a_traversal>) step to instruct that a loop is repeated until a condition to stop is met. There are two ways of stopping a repeat() step.
+Sometimes, we may need to traverse a graph multiple times or until a condition is met. This is called recursive traversal. When performing recursive traversals in Gremlin, we use the `repeat(&lt;a_traversal>)` step to instruct that a loop is repeated until a condition to stop is met. There are two ways of stopping a `repeat()` step.
 
 
 
-* times(&lt;an_integer>): This is used after a repeat() step to specify the number of times the traversal within the repeat() step is done.
-* until(&lt;a_traversal>): This specifies a traversal condition that must be met before the repeat loops stop. For instance, a traversal is repeated until a node ID of 1 is reached. Note that the until() step should be used carefully, because if the condition is not met, all possible paths will be explored. This can cause performance issues in large graphs.
+* `times(&lt;an_integer>)`: This is used after a `repeat()` step to specify the number of times the traversal within the `repeat()` step is done.
+* `until(&lt;a_traversal>)`: This specifies a traversal condition that must be met before the repeat loops stop. For instance, a traversal is repeated until a node ID of 1 is reached. Note that the `until()` step should be used carefully, because if the condition is not met, all possible paths will be explored. This can cause performance issues in large graphs.
 
 Assume the graph was undirected, and we wish to return the friends of Diana's friends. This means we need to traverse the graph twice from Diana. We use the code:
 
@@ -209,12 +211,12 @@ Output:
 
 So the friends of friends of Diana are Charlie and Eli.
 
-We often use the until() and repeat() steps when returning a path between two nodes.
+We often use the `until()` and `repeat()` steps when returning a path between two nodes.
 
 
 ### Returning a Path
 
-When we traverse a graph, we can filter nodes or edges of interest to return the paths between two nodes. A path is a unique property of graphs, allowing us to understand the possible connections between two nodes. We can return the paths in Gremlin using the path() step.
+When we traverse a graph, we can filter nodes or edges of interest to return the paths between two nodes. A path is a unique property of graphs, allowing us to understand the possible connections between two nodes. We can return the paths in Gremlin using the `path()` step.
 
 For instance, Alice can get to Eli in our friends network in two ways.
 
@@ -259,9 +261,9 @@ Output:
 
 ![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image9.png "image_tooltip")
 
-But when we use path(), Gremlin considers all possible paths in the graph, including repeated paths. If there are repeated paths, we run into a cycle where the path becomes unending. This is similar to having an infinite loop in Python.
+But when we use `path()`, Gremlin considers all possible paths in the graph, including repeated paths. If there are repeated paths, we run into a cycle where the path becomes unending. This is similar to having an infinite loop in Python.
 
-To ensure we do not run into cycles in Gremlin, we add the simplePath() step within the repeat() step. This way, Gremlin considers only linear paths and discards cycles.
+To ensure we do not run into cycles in Gremlin, we add the `simplePath()` step within the `repeat()` step. This way, Gremlin considers only linear paths and discards cycles.
 
 A safer way to run the earlier code is:
 
@@ -286,7 +288,7 @@ openCypher is popularly known for its SQL-like syntax. It was developed by Neo4j
 
 ### Adding a node
 
-To add a node in openCypher, we use the CREATE keyword. The CREATE keyword follows the syntax below.
+To add a node in openCypher, we use the `CREATE` keyword. The `CREATE` keyword follows the syntax below.
 
 
 ```
@@ -307,7 +309,7 @@ We can add the other nodes in a similar fashion.
 
 ### Adding an edge
 
-To add an edge, we first define the source and target nodes using the MATCH clause. For instance, we match Alice and Charlie in this fashion.
+To add an edge, we first define the source and target nodes using the `MATCH` clause. For instance, we match Alice and Charlie in this fashion.
 
 
 ```
@@ -315,7 +317,7 @@ MATCH (a:person {name: 'Alice'}), (c:person {name: 'Charlie'})
 ```
 
 
-Notice that Alice was mapped to ‘a‘ and Charlie to ‘c’. 
+Notice that Alice was mapped to `a` and Charlie to `c`. 
 
 Next, we can create an edge from node a to c, using the syntax below.
 
@@ -337,7 +339,7 @@ CREATE (a)-[:friends_with {years_of_friendship: 3}]->(c)
 
 ### Deleting a node
 
-We can delete a node or edge in openCypher. We first use the MATCH clause to specify the node of interest and use the DELETE keyword to delete it. We follow the syntax below.
+We can delete a node or edge in openCypher. We first use the `MATCH` clause to specify the node of interest and use the `DELETE` clause to delete it. We follow the syntax below.
 
 
 ```
@@ -355,7 +357,7 @@ DELETE n
 ```
 
 
-Note that openCypher only deletes a node if it has no edges. When edges are associated with the node, we must detach them before deleting them using the DETACH DELETE keyword.
+Note that openCypher only deletes a node if it has no edges. When edges are associated with the node, we must detach them before deleting them using the `DETACH DELETE` clause.
 
 Thus, since Diana has an edge, we use the code below to delete the Diana node and the associated edge.
 
@@ -369,7 +371,7 @@ DETACH DELETE n
 
 ### Deleting an edge
 
-To delete an edge in openCypher, we use the MATCH clause to specify the edge of interest and then DELETE keyword to remove the edge. It follows the syntax:
+To delete an edge in openCypher, we use the `MATCH` clause to specify the edge of interest and then `DELETE` clause to remove the edge. It follows the syntax:
 
 
 ```
@@ -378,7 +380,7 @@ DELETE e
 ```
 
 
-Notice that we have defined the edge as ‘e’ in the MATCH step, and then we use the DELETE keyword to remove it. To remove the friends_with edge between Alice and Charlie, we run:
+Notice that we have defined the edge as ‘e’ in the `MATCH` step, and then we use the DELETE clause to remove it. To remove the `friends_with` edge between Alice and Charlie, we run:
 
 
 ```
@@ -402,7 +404,7 @@ DETACH DELETE n
 
 ### Traversing the graph
 
-To traverse the graph, we use the MATCH clause to specify the pattern we desire in the graph and the RETURN keyword to return the result.
+To traverse the graph, we use the `MATCH` clause to specify the pattern we desire in the graph and the `RETURN` keyword to return the result.
 
 For instance, if we wish to return all direct friends of Alice, we run:
 
@@ -429,14 +431,14 @@ There are a few things to notice here.
 
 
 
-* The MATCH clause followed the pattern (a)-[:b]->(c): This means that the graph would traverse outward from a, find an edge named b, and return the resulting nodes (called c).
-* *1 when specifying the edge: The graph should be traversed once from a.
+* The `MATCH` clause followed the pattern `(a)-[:b]->(c)`: This means that the graph would traverse outward from a, find an edge named b, and return the resulting nodes (called c).
+* `*1` when specifying the edge: The graph should be traversed once from a.
 
-To traverse twice, we use *2.
+To traverse twice, we use `*2`.
 
-To traverse to the root of all possible paths, we use *
+To traverse to the root of all possible paths, we use `*`
 
-To traverse and return any of the paths within a range, say all nodes between the third and fifth traversal, we use *3..5.
+To traverse and return any of the paths within a range, say all nodes between the third and fifth traversal, we use `*3..5`.
 
 For instance, we can return the friends of friends of Alice assuming an undirected graph using:
 
@@ -458,12 +460,12 @@ Output:
 
 ![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image4.png "image_tooltip")
 
-Notice that the structure of the MATCH step is (a)-[]-(c). When we use (a)-[]-(c), the traversal is undirected, meaning both incoming and outgoing edges are considered. If we use (a)&lt;-[]-(c), only incoming nodes from node a will be considered.
+Notice that the structure of the `MATCH` step is `(a)-[]-(c)`. When we use `(a)-[]-(c)`, the traversal is undirected, meaning both incoming and outgoing edges are considered. If we use `(a)&lt;-[]-(c)`, only incoming nodes from node a will be considered.
 
 
 ### Returning paths
 
-Similar to other approaches, we use the MATCH clause to specify the start and end nodes. The RETURN node is then used to return all the paths. For instance, to return the paths between Alice and Eli:
+Similar to other approaches, we use the `MATCH` clause to specify the start and end nodes. The `RETURN` clause is then used to return all the paths. For instance, to return the paths between Alice and Eli:
 
 
 ```
@@ -472,7 +474,7 @@ RETURN path
 ```
 
 
-This returns a list of all the paths. The list contains the node labels, including its id. To return just the name, we use a list comprehension in the RETURN step.
+This returns a list of all the paths. The list contains the node labels, including its id. To return just the name, we use a list comprehension in the `RETURN` step.
 
 
 ```
@@ -502,7 +504,7 @@ Subjects and objects are entities in an RDF graph. They are technically called r
 
 ### Adding a resource
 
-To add a resource, we use the INSERT DATA operation. The code below adds the resource and specifies that the resource is of class Person.
+To add a resource, we use the `INSERT DATA` operation. The code below adds the resource and specifies that the resource is of class `Person`.
 
 
 ```
@@ -512,7 +514,7 @@ INSERT DATA {
 ```
 
 
-As mentioned earlier, resources are URI. In the code snippet, we defined a new resource within the URI &lt;[http://example.com/](http://example.com/)>. But to avoid writing this URI when creating a resource, we use the PREFIX keyword to set the URI to ex. This means that the URI prefix can be written as ex.
+As mentioned earlier, resources are URI. In the code snippet, we defined a new resource within the URI `&lt;[http://example.com/](http://example.com/)>`. But to avoid writing this URI when creating a resource, we use the `PREFIX` keyword to set the URI to ex. This means that the URI prefix can be written as ex.
 
 Queries in SPARQL are always written in the form object predicate subject (a triple).
 
@@ -525,13 +527,13 @@ INSERT DATA {
 ```
 
 
-The subject is Alice, a is a special keyword in Turtle syntax meaning ‘is of type’, and the object is Person. Therefore, the query above can be read as insert Alice, who is of type Person.
+The subject is `Alice`, a is a special keyword in Turtle syntax meaning is `of type`, and the object is `Person`. Therefore, the query above can be read as insert Alice, who is of type Person.
 
-When we do not wish to specify the type of a subject, we replace a with the name of the relationship in the form &lt;prefix:subject prefix:relationship prefix:object> .
+When we do not wish to specify the type of a subject, we replace a with the name of the relationship in the form `&lt;prefix:subject prefix:relationship prefix:object>` .
 
 Adding resources with edges
 
-We can add edges by using the INSERT DATA with the triple syntax: 
+We can add edges by using the `INSERT DATA` with the triple syntax: 
 
 
 ```
@@ -550,7 +552,7 @@ INSERT DATA {
 ```
 
 
-This creates the ‘nodes’ Charlie and Eli and their relationship ‘friendsWith’, all in one sweep.
+This creates the `nodes` Charlie and Eli and their relationship `friendsWith`, all in one sweep.
 
 To view the edges in the RDF graph, we use:
 
@@ -593,7 +595,7 @@ INSERT DATA {
 
 ### Traversing the graph
 
-We can traverse the graph to return objects of connecting relationships. We use the SELECT clause to specify what to return and the WHERE clause to define the triplet. The object is defined using a variable with a preceding ? character. For instance, to return friends of Alice, we can use:
+We can traverse the graph to return objects of connecting relationships. We use the `SELECT` clause to specify what to return and the `WHERE` clause to define the triplet. The object is defined using a variable with a preceding `?` character. For instance, to return friends of Alice, we can use:
 
 
 ```
@@ -619,7 +621,7 @@ Output:
 ![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image7.png "image_tooltip")
 
 
-We can also traverse the graph multiple times. If we want to return the friends of friends of Alice, the predicate in the triplet is written twice and separated with /.
+We can also traverse the graph multiple times. If we want to return the friends of friends of Alice, the predicate in the triplet is written twice and separated with `/`.
 
 
 ```
