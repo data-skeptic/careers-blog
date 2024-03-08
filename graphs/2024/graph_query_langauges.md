@@ -16,7 +16,7 @@ As mentioned earlier, graphs are represented in nodes and edges. For instance, a
 
 The figure below captures the relationship between these four people.
 
-<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" style="width:4.44in; height:auto;">
+<img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png" style="width:4.44in; height:3.36in;">
 
 
 
