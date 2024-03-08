@@ -180,12 +180,12 @@ g.V('3').out('friends_with').values('first_name').toList()
 
 ### Recursive traversals
 
-Sometimes, we may need to traverse a graph multiple times or until a condition is met. This is called recursive traversal. When performing recursive traversals in Gremlin, we use the `repeat(&lt;a_traversal>)` step to instruct that a loop is repeated until a condition to stop is met. There are two ways of stopping a `repeat()` step.
+Sometimes, we may need to traverse a graph multiple times or until a condition is met. This is called recursive traversal. When performing recursive traversals in Gremlin, we use the `repeat(<a_traversal>)` step to instruct that a loop is repeated until a condition to stop is met. There are two ways of stopping a `repeat()` step.
 
 
 
-* `times(&lt;an_integer>)`: This is used after a `repeat()` step to specify the number of times the traversal within the `repeat()` step is done.
-* `until(&lt;a_traversal>)`: This specifies a traversal condition that must be met before the repeat loops stop. For instance, a traversal is repeated until a node ID of 1 is reached. Note that the `until()` step should be used carefully, because if the condition is not met, all possible paths will be explored. This can cause performance issues in large graphs.
+* `times(<an_integer>)`: This is used after a `repeat()` step to specify the number of times the traversal within the `repeat()` step is done.
+* `until(<a_traversal>)`: This specifies a traversal condition that must be met before the repeat loops stop. For instance, a traversal is repeated until a node ID of 1 is reached. Note that the `until()` step should be used carefully, because if the condition is not met, all possible paths will be explored. This can cause performance issues in large graphs.
 
 Assume the graph was undirected, and we wish to return the friends of Diana's friends. This means we need to traverse the graph twice from Diana. We use the code:
 
@@ -460,7 +460,7 @@ Output:
 
 ![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image4.png "image_tooltip")
 
-Notice that the structure of the `MATCH` step is `(a)-[]-(c)`. When we use `(a)-[]-(c)`, the traversal is undirected, meaning both incoming and outgoing edges are considered. If we use `(a)&lt;-[]-(c)`, only incoming nodes from node a will be considered.
+Notice that the structure of the `MATCH` step is `(a)-[]-(c)`. When we use `(a)-[]-(c)`, the traversal is undirected, meaning both incoming and outgoing edges are considered. If we use `(a)<-[]-(c)`, only incoming nodes from node a will be considered.
 
 
 ### Returning paths
@@ -514,7 +514,7 @@ INSERT DATA {
 ```
 
 
-As mentioned earlier, resources are URI. In the code snippet, we defined a new resource within the URI `&lt;[http://example.com/](http://example.com/)>`. But to avoid writing this URI when creating a resource, we use the `PREFIX` keyword to set the URI to ex. This means that the URI prefix can be written as ex.
+As mentioned earlier, resources are URI. In the code snippet, we defined a new resource within the URI `<[http://example.com/](http://example.com/)>`. But to avoid writing this URI when creating a resource, we use the `PREFIX` keyword to set the URI to ex. This means that the URI prefix can be written as ex.
 
 Queries in SPARQL are always written in the form object predicate subject (a triple).
 
@@ -529,7 +529,7 @@ INSERT DATA {
 
 The subject is `Alice`, a is a special keyword in Turtle syntax meaning is `of type`, and the object is `Person`. Therefore, the query above can be read as insert Alice, who is of type Person.
 
-When we do not wish to specify the type of a subject, we replace a with the name of the relationship in the form `&lt;prefix:subject prefix:relationship prefix:object>` .
+When we do not wish to specify the type of a subject, we replace a with the name of the relationship in the form `<prefix:subject prefix:relationship prefix:object>` .
 
 Adding resources with edges
 
