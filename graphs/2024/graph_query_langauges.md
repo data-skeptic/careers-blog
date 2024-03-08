@@ -22,8 +22,6 @@ The figure below captures the relationship between these four people.
 
 
 
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image5.png "image_tooltip")
-
 
 Each person, Eli, Charlie, Alice, and Diana, is a node. The lines represent the connection between them, in this case, friendship. Nodes and edges can both have properties.
 
@@ -165,10 +163,6 @@ Output:
 
 
 
-
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image3.png "image_tooltip")
-
 We can also specify a starting node using the node ID rather than its property.
 
 
@@ -205,9 +199,6 @@ Output:
 
 
 
-
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image8.png "image_tooltip")
 
 So the friends of friends of Diana are Charlie and Eli.
 
@@ -258,8 +249,6 @@ Output:
 
 
 
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image9.png "image_tooltip")
 
 But when we use `path()`, Gremlin considers all possible paths in the graph, including repeated paths. If there are repeated paths, we run into a cycle where the path becomes unending. This is similar to having an infinite loop in Python.
 
@@ -424,9 +413,6 @@ Output:
 
 
 
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image6.png "image_tooltip")
-
 There are a few things to notice here.
 
 
@@ -458,8 +444,6 @@ Output:
 
 
 
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image4.png "image_tooltip")
-
 Notice that the structure of the `MATCH` step is `(a)-[]-(c)`. When we use `(a)-[]-(c)`, the traversal is undirected, meaning both incoming and outgoing edges are considered. If we use `(a)<-[]-(c)`, only incoming nodes from node a will be considered.
 
 
@@ -489,10 +473,6 @@ Output:
 <img src="https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image10.png" style="width:6.5in; height:auto;">
 
 
-
-
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image10.png "image_tooltip")
 
 
 ## SPARQL
@@ -575,9 +555,6 @@ Output:
 
 
 
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image1.png "image_tooltip")
-
-
 If we wish to insert multiple predicates and objects from one subject, we use ; to separate the insertions. We do not repeat the subject after the first data insertion. For instance, the code below inserts a relationship between Alice to Charlie, Diana, and Eli.
 
 
@@ -618,9 +595,6 @@ Output:
 
 
 
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image7.png "image_tooltip")
-
-
 We can also traverse the graph multiple times. If we want to return the friends of friends of Alice, the predicate in the triplet is written twice and separated with `/`.
 
 
@@ -642,9 +616,6 @@ Output:
 
 
 
-
-
-![alt_text](https://dayvheeedbucket.s3.amazonaws.com/graph_article_images/image2.png "image_tooltip")
 
 
 Comparing Gremlin, openCypher and SPARQL
@@ -730,7 +701,7 @@ Having explored all three popular graph query languages, the table below shows t
    </td>
    <td>Moderate, similar to SQL
    </td>
-   <td>Moderate to steep, requires understanding of graph theory
+   <td>Moderate to steep. Although intuitive, it needs an understanding of a new syntax
    </td>
   </tr>
   <tr>
